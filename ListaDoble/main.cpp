@@ -89,6 +89,20 @@ int main() {
 	cout << endl;
 	cout << endl;
 
+	lista.Add_sortA(8);
+	lista.Add_sortA(60);
+	lista.Add_sortA(0);
+
+	cout << endl;
+	cout << endl;
+
+
+	for (int i = 0; i < lista.Size(); i++)
+		cout << *lista[i] << "->";
+
+	cout << endl;
+	cout << endl;
+
 
 	if (lista.Search(46))
 		cout << lista.Search(46)->getData() << endl;

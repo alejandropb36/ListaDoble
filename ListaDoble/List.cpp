@@ -129,6 +129,7 @@ void List<T1>::Add_sortA(T1 data)
 			NewItem->before = aux->before;
 			NewItem->next = aux;
 			aux->before = NewItem;
+			_size++;
 		}
 	}
 	else
