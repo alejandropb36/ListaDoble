@@ -1,14 +1,10 @@
-/*
-Autor: Alejandro Ponce
-
-Lista doblemente ligada usando template
-
-Estudiante de ingenieria en computacion
-
-Este archivo es libre para cualquier fin
-
-Correo: alexponce36@hotmail.com
-*/
+//
+// Lista doblemente ligada usando template
+// Autor: Alejandro Ponce
+// Correo: alexponce36@hotmail.com
+// Este codigo es libre
+// List.h
+//
 #pragma once
 
 #include <iostream>
@@ -27,7 +23,7 @@ public:
 	void Push_back(T1);
 	void Add_position(T1, int);
 	void Add_norepeat(T1);
-	//void Add_sortA(T1); // Agrega orden acedente. no sirve
+	void Add_sortA(T1); // Agrega orden acedente. no sirve
 	//void Add_sortD(T1); // Agrega orden decendente. no sirve
 	Node<T1>* Search(T1);
 	void Pop_back();

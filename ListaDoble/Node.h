@@ -1,14 +1,10 @@
-/*
-Autor: Alejandro Ponce
-
-Nodo usado para listas o arboles binarios
-
-Estudiante de ingenieria en computacion
-
-Este archivo es libre para cualquier fin
-
-Correo: alexponce36@hotmail.com
-*/
+//
+// Lista doblemente ligada usando template
+// Autor: Alejandro Ponce
+// Correo: alexponce36@hotmail.com
+// Este codigo es libre
+// Node.h
+//
 #pragma once
 
 template <class T1>

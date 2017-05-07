@@ -1,15 +1,10 @@
-/*	
-Autor: Alejandro Ponce
-	
-Lista doblemente ligada usando template
-
-Estudiante de ingenieria en computacion
-	
-Este archivo es libre para cualquier fin
-	
-Correo: alexponce36@hotmail.com
-*/
-
+//
+// Lista doblemente ligada usando template
+// Autor: Alejandro Ponce
+// Correo: alexponce36@hotmail.com
+// Este codigo es libre
+// List.cpp
+//
 #include "List.h"
 
 template <class T1>
@@ -103,12 +98,47 @@ void List<T1>::Add_norepeat(T1 data)
 	}
 }
 
-/*template <class T1>
+template <class T1>
 void List<T1>::Add_sortA(T1 data)
 {
-	std::cout << "El metodo aun no funciona" << std::endl;
+	Node<T1>* aux = _begin;
+
+	if (!Empty())
+	{
+		while (aux)
+		{
+			if (aux->data < data)
+				aux = aux->next;
+			else
+				break;
+			
+		}
+		if (aux == _begin)
+		{
+			Push_front(data);
+		}
+		else if (!aux)
+		{
+			Push_back(data);
+		}
+		else
+		{
+			Node<T1>* NewItem = new Node<T1>(data);
+
+			aux->before->next = NewItem;
+			NewItem->before = aux->before;
+			NewItem->next = aux;
+			aux->before = NewItem;
+		}
+	}
+	else
+	{
+		Push_front(data);
+	}
 }
 
+
+/*
 template <class T1>
 void List<T1>::Add_sortD(T1 data)
 {

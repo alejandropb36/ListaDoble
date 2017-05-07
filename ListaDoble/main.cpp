@@ -1,8 +1,10 @@
-/* 
-author: Alejandro Ponce 
-e-mail: alexponce36@hotmail.com	
-Template List
-*/
+//
+// prueba de lista doblemente ligada usando template
+// Autor: Alejandro Ponce
+// Correo: alexponce36@hotmail.com
+// Este codigo es libre
+// main.cpp
+//
 
 #include <iostream>
 #include "List.h"
