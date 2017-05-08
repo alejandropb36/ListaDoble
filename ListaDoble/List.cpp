@@ -107,7 +107,7 @@ void List<T1>::Add_sortA(T1 data)
 	{
 		while (aux)
 		{
-			if (aux->data < data)
+			if (data < aux->data)
 				aux = aux->next;
 			else
 				break;
@@ -181,8 +181,15 @@ void List<T1>::Pop_front()
 	Node<T1>* aux = _begin;
 	if (aux == _end)
 		_end = nullptr;
-	_begin = _begin->next;
-	_begin->before = nullptr;
+	if (_begin->next)
+	{
+		_begin = _begin->next;
+		_begin->before = nullptr;
+	}
+	else
+	{
+		_begin = nullptr;
+	}
 	delete(aux);
 	_size--;
 }

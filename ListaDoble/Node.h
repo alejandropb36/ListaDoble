@@ -22,7 +22,7 @@ public:
 	void setNext(Node*);
 	void setBefore(Node*);
 
-	T1 getData();
+	T1* getData();
 	Node<T1>* getNext();
 	Node<T1>* getBefore();
 

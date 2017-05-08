@@ -47,9 +47,9 @@ void Node<T1>::setBefore(Node<T1>* before)
 }
 
 template <class T1>
-T1 Node<T1>::getData()
+T1* Node<T1>::getData()
 {
-	return data;
+	return &data;
 }
 
 template <class T1>
